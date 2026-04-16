@@ -1,0 +1,42 @@
+# Environment
+.env
+.env.local
+
+# Data (large, not committed)
+data/
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Eval results (committed selectively)
+eval/results/*.json
+
+# Node / UI
+ui/node_modules/
+ui/.next/
+ui/.env.local
+
+# Qdrant local storage
+qdrant_storage/
+
+# Logs
+*.log
+logs/
