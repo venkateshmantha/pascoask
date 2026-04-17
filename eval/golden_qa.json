@@ -1,0 +1,21 @@
+[
+  {
+    "_comment": "TODO: Replace these placeholder entries with real QA pairs derived from reading actual scraped documents. Run the scrapers first, then read 40+ documents from the DB to craft genuine question/answer pairs with real source doc IDs.",
+    "question": "What vote did the Board of County Commissioners take on the Mirada development?",
+    "expected_answer": "TODO: Fill in after reading actual BCC minutes from the DB",
+    "source_doc_id": "TODO: e.g. bcc_minutes_2023_XX_XX",
+    "doc_type": "meeting_minutes"
+  },
+  {
+    "question": "What are the setback requirements for a residential fence in Pasco County?",
+    "expected_answer": "TODO: Fill in after reading actual LDC sections from the DB",
+    "source_doc_id": "TODO: e.g. ldc_section_XXX_XX",
+    "doc_type": "ordinance"
+  },
+  {
+    "question": "What does the MPUD zoning designation allow in Pasco County?",
+    "expected_answer": "TODO: Fill in after reading actual GIS/zoning records from the DB",
+    "source_doc_id": "TODO: e.g. ldc_section_XXX",
+    "doc_type": "ordinance"
+  }
+]

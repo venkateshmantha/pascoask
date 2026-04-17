@@ -32,8 +32,8 @@ class Settings(BaseSettings):
     max_concurrent_requests: int = 3
 
     # Models
-    enrichment_model: str = "claude-opus-4-6"
-    answer_model: str = "claude-opus-4-6"
+    enrichment_model: str = "claude-haiku-4-5-20251001"  # cheap batch enrichment
+    answer_model: str = "claude-opus-4-6"                # quality answers
 
     # Logging
     log_level: str = "INFO"

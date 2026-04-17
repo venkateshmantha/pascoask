@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "pascoask"
@@ -25,6 +25,7 @@ dependencies = [
     "sentence-transformers>=3.0",
     # Evaluation
     "ragas>=0.1",
+    "datasets>=2.0",
     # API
     "fastapi>=0.111",
     "uvicorn[standard]>=0.30",
@@ -46,6 +47,10 @@ dev = [
     "ruff>=0.4",
     "mypy>=1.10",
 ]
+
+[tool.setuptools.packages.find]
+include = ["ingestion*", "storage*", "retrieval*", "mcp_server*", "api*", "eval*"]
+exclude = ["ui*", "scripts*", "data*"]
 
 [tool.ruff]
 line-length = 100
